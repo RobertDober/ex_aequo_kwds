@@ -44,6 +44,14 @@ jobs:
             ~/.mix
             _build
           key: ${{ matrix.otp }}-${{ matrix.elixir }}-build
+      - run: mix format --check-formatted
+        env:
+          CC: gcc-10
+          CXX: g++-10
+      - run: mix dialyzer
+        env:
+          CC: gcc-10
+          CXX: g++-10
       - run: mix compile --warnings-as-errors
         env:
           CC: gcc-10

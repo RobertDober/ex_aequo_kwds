@@ -1,6 +1,6 @@
 defmodule SimpleArgs.MixProject do
   use Mix.Project
-  @version "0.1.0"
+  @version "0.1.1"
   @url "https://github.com/RobertDober/ex_aequo_kwds"
 
   def project do
@@ -36,7 +36,7 @@ defmodule SimpleArgs.MixProject do
     [
       {:dialyxir, "~> 1.4.3", only: [:dev], runtime: false},
       {:excoveralls, "~> 0.18.1", only: [:test]},
-      {:extractly, "~> 0.5.4", only: [:dev]},
+      {:extractly, "~> 0.5.4", only: [:dev]}
     ]
   end
 
